@@ -1,3 +1,6 @@
+import userData from '/users/felipeaugusto/Documents/Desenvolvedor/Projeto Cypress/node_modules/cypress/package.json'
+
+
 describe('Orange HRM Tests', () => {
  
  const selectorsList = {
@@ -10,24 +13,7 @@ describe('Orange HRM Tests', () => {
   wrongCredentialAlert: '.oxd-alert',
  }
 
-
- const userData = {
-  userSucces: {
-    username: 'Admin',
-    password: 'admin123'
-  },
-  userFail: {
-    username: 'Test',
-    password: 'Test'
-  }
- }
-
-
-
-  
- 
- 
- it('Login Success', () => {
+  it('Login Success', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     cy.get(selectorsList.usernameField).type('Admin')
     cy.get(selectorsList.passwordField).type('admin123')
