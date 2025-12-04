@@ -1,5 +1,4 @@
-import userData from '/users/felipeaugusto/Documents/Desenvolvedor/Projeto Cypress/node_modules/cypress/package.json'
-
+import userData from '/Users/felipeaugusto/Documents/Desenvolvedor/new-cypress-project/cypress/fixtures/userData.json'
 
 describe('Orange HRM Tests', () => {
  
